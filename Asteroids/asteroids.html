@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color:rgb(1, 11, 68);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="asteroids.js"></script>
+    </head>
+    <body>
+        <h1>Asteroids</h1>
+        <p>
+            <text>Destroy all Asteroids to Win!</text>
+            <br/> INSTRUCTIONS </text>
+            <br/> MOVE: Hold the right mouse button to thrust the ship. <br/>Use your mouse cursor to move the ship.
+            <br/> SHOOT: Use spacebar to shoot! Each death causes the asteroids to move faster!<br/> Only the small asteroids can be destroyed!</text>
+        </p>
+        <svg id="canvas" width="600" height="600">
+            <text id="roidLeft" x="10" y="25" fill="red" font-family = "Impact" font-size="20">Asteroids Left: 9</text>
+            <text id="destroyed" x="10" y="50" fill="yellow" font-family = "Impact" font-size="20">Destroyed: 0</text>
+            <text id="healthLeft" x="500" y="25" fill="lime" font-family = "Impact" font-size="20">Lives Left: 3</text>
+            <text id="win" x="190" y="300" font-family = "Impact" fill="lime" font-size="50"></text>
+            <text id="lose" x="210" y="300" font-family = "Impact" fill="red" font-size="50"></text>
+        </svg>
+    </body>
+</html>
