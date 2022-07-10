@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgba(56, 56, 56, 0.938);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <p></p>
+        <text>The first to score 11 points WINS! <br/> Move your mouse up or down to move the blue paddle. <text>
+        <p></p>
+        <svg id="canvas" width="600" height="600">
+            <line x1 = "300" x2 = "300" y1 = "0" y2 = "600"  stroke="white" stroke-dasharray="15"/>
+            <text id="playerpoint" x="125" y="100" fill="white" font-size="70">0</text>
+            <text id="aipoint" x="425" y="100" fill="white" font-size="70">0</text>
+            <text id="win1" x="150" y="200" fill="blue" font-size="50"></text>
+            <text id="win2" x="150" y="200" fill="red" font-size="50"></text>
+        </svg>
+    </body>
+</html>
